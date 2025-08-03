@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from datetime import datetime
 
 from Options import Choice, DeathLink, DefaultOnToggle, PerGameCommonOptions, Range, Toggle, StartInventoryPool, \
-    ItemDict, ItemsAccessibility, ItemSet, Visibility
+    ItemDict, ItemsAccessibility, ItemSet, FreeText, Visibility
 from worlds.tloz_oos.data.Items import ITEMS_DATA
 
 
@@ -609,6 +609,51 @@ class OracleOfSeasonsMoveLink(Toggle):
     visibility = Visibility.all if (datetime.now().month == 4) else Visibility.none  # Only visible in april
 
 
+class OracleOfSeasonsHints(DefaultOnToggle):
+    """
+    Adds Item, Way of the Hero, and Barren hints to Know-It-All Birds and Owl Statues.
+    Item hints will tell you where a random of your items is in the multiworld.
+    Way of the Hero hints will tell you a region that contains an item required to complete the multiworld.
+    Barren hints will tell you a region that has no important items.
+    """
+    display_name = "Enable Hints"
+
+
+class OracleOfSeasonsClearHints(DefaultOnToggle):
+    """
+    If enabled, item hints for your items or locations will be explicit for what they are.
+    If disabled, item hints for your items or locations will be more vague.
+    """
+    display_name = "Clear Hints"
+
+
+class OracleOfSeasonsItemHintWeight(FreeText):
+    """
+    Sets the weight of Item hints.
+    Does nothing if hints are not enabled.
+    """
+    display_name = "Item Hint Weight"
+    default = "80"
+
+
+class OracleOfSeasonsWotHHintWeight(FreeText):
+    """
+    Sets the weight of Way of the Hero hints.
+    Does nothing if hints are not enabled.
+    """
+    display_name = "WotH Hint Weight"
+    default = "10"
+
+
+class OracleOfSeasonsBarrenHintWeight(FreeText):
+    """
+    Sets the weight of Barren hints.
+    Does nothing if hints are not enabled.
+    """
+    display_name = "Barren Hint Weight"
+    default = "10"
+
+
 @dataclass
 class OracleOfSeasonsOptions(PerGameCommonOptions):
     accessibility: ItemsAccessibility
@@ -673,6 +718,13 @@ class OracleOfSeasonsOptions(PerGameCommonOptions):
     rosa_quick_unlock: OracleOfSeasonsRosaQuickUnlock
     starting_maps_compasses: OracleOfSeasonsStartingMapsCompasses
     randomize_ai: OracleOfSeasonsRandomizeAi
+
+    # Hints
+    enable_hints: OracleOfSeasonsHints
+    clear_hints: OracleOfSeasonsClearHints
+    hint_weight_item: OracleOfSeasonsItemHintWeight
+    hint_weight_woth: OracleOfSeasonsWotHHintWeight
+    hint_weight_barren: OracleOfSeasonsBarrenHintWeight
 
     remove_items_from_pool: OracleOfSeasonsRemoveItemsFromPool
     death_link: DeathLink

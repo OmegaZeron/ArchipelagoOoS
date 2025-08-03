@@ -7,6 +7,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc7b8,
         "room": 0x00b8,
         "collect": COLLECT_CHEST,
+        "foggy_hints": ["walking over leaves near a lake grants", "jumping over pits near a lake grants"],
+        "clear_hint": "the chest across the bridge in North Horon contains",
+        "region": "North Horon"
     },
     "Horon Village: Maku Tree Gift": {
         "region_id": "maku tree",
@@ -17,6 +20,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_MAKU_TREE,
         "map_tile": 0xc9,
         "symbolic_name": "makuTree",
+        "foggy_hints": ["a wise one's gift is", "a sleeper's gift is"],
+        "clear_hint": "Maku Tree's gift is",
+        "region": "Horon Village"
     },
     "Horon Village: Chest Behind Mushrooms": {
         "region_id": "horon village SW chest",
@@ -24,6 +30,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc7f5,
         "room": 0x00f5,
         "collect": COLLECT_CHEST,
+        "foggy_hints": [],
+        "clear_hint": "the mushroom chest in Horon Village contains",
+        "region": "Horon Village"
     },
     "Horon Village: Chest in Dr. Left's Backyard": {
         "region_id": "horon village SE chest",
@@ -31,6 +40,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc7f9,
         "room": 0x00f9,
         "collect": COLLECT_CHEST,
+        "foggy_hints": ["Mr. Wrong's pool contains"],
+        "clear_hint": "Dr. Left's backyard chest contains",
+        "region": "Horon Village"
     },
     "Woods of Winter: Holly's Gift": {
         "region_id": "holly's house",
@@ -40,6 +52,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x7f,
         "symbolic_name": "hollyGift",
+        "foggy_hints": ["becoming Santa grants"],
+        "clear_hint": "Holly gives",
+        "region": "Woods of Winter"
     },
     "Woods of Winter: Chest on D2 Roof": {
         "region_id": "d2 roof",
@@ -47,6 +62,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc78e,
         "room": 0x008e,
         "collect": COLLECT_CHEST,
+        "foggy_hints": [],
+        "clear_hint": "the chest above D2 contains",
+        "region": "Woods of Winter"
     },
     "Holodrum Plain: Blaino's Gym Prize": {
         "region_id": "blaino prize",
@@ -56,6 +74,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x78,
         "symbolic_name": "blainoPrize",
+        "foggy_hints": ["a boxer holds", "a penguin holds"],
+        "clear_hint": "Blaino gives",
+        "region": "Holodrum Plain"
     },
     "Holodrum Plain: Underwater Item Below Natzu Bridge": {
         "region_id": "underwater item below natzu bridge",
@@ -63,7 +84,10 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc766,
         "room": 0x0066,
         "collect": COLLECT_DIVE,
-        "symbolic_name": "underwaterItemBelowNatzuBridge"
+        "symbolic_name": "underwaterItemBelowNatzuBridge",
+        "foggy_hints": [],
+        "clear_hint": "Holodrum Plain's underwater item contains",
+        "region": "Holodrum Plain"
     },
     "Spool Swamp: Digging Spot Near Vasu's Sign": {
         "region_id": "spool swamp digging spot",
@@ -72,6 +96,9 @@ LOCATIONS_DATA = {
         "room": 0x0082,
         "collect": COLLECT_DIG,
         "symbolic_name": "spoolSwampDiggingSpot",
+        "foggy_hints": ["a ring bearer's hidden gift"],
+        "clear_hint": "Vasu's buried gift is",
+        "region": "Spool Swamp"
     },
     "Spool Swamp: Item in Floodgate Keeper's House": {
         "region_id": "floodgate keeper's house",
@@ -80,7 +107,10 @@ LOCATIONS_DATA = {
         "room": 0x03b5,
         "collect": COLLECT_TOUCH,
         "map_tile": 0x62,
-        "symbolic_name": "floodgateKeeperHouse"
+        "symbolic_name": "floodgateKeeperHouse",
+        "foggy_hints": ["a dam maintainer holds"],
+        "clear_hint": "the Floodgate Keeper lost",
+        "region": "Spool Swamp"
     },
     "Spool Swamp: Chest in Winter Cave": {
         "region_id": "spool swamp cave",
@@ -89,6 +119,9 @@ LOCATIONS_DATA = {
         "room": 0x04fa,
         "collect": COLLECT_CHEST,
         "map_tile": 0xc2,
+        "foggy_hints": [],
+        "clear_hint": "Spool Swamp's Winter cave contains",
+        "region": "Spool Swamp"
     },
     "Natzu Region: Chest after Moblin Keep": {
         "region_id": "moblin keep chest",
@@ -96,6 +129,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc75b,
         "room": 0x005b,
         "collect": COLLECT_CHEST,
+        "foggy_hints": ["an explosion-happy despot clutches"],
+        "clear_hint": "the Great Moblin holds",
+        "region": "Natzu"
     },
     "Sunken City: Master Diver's Challenge Chest": {
         "region_id": "master diver's challenge",
@@ -104,6 +140,9 @@ LOCATIONS_DATA = {
         "room": 0x05bc,
         "collect": COLLECT_CHEST,
         "map_tile": 0x2e,
+        "foggy_hints": [],
+        "clear_hint": "the Master Diver's challenge grants",
+        "region": "Sunken City"
     },
     "Sunken City: Master's Plaque Trade": {
         "region_id": "master diver's reward",
@@ -114,6 +153,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIVER_ROOM,
         "map_tile": 0x2e,
         "symbolic_name": "masterPlaqueTrade",
+        "foggy_hints": [],
+        "clear_hint": "the Master Diver holds",
+        "region": "Sunken City"
     },
     "Sunken City: Chest in Master Diver's Cave": {
         "region_id": "chest in master diver's cave",
@@ -123,6 +165,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIVER_ROOM,
         "is_chest": True,
         "map_tile": 0x2e,
+        "foggy_hints": [],
+        "clear_hint": "the Master Diver's chest contains",
+        "region": "Sunken City"
     },
     "Mt. Cucco: Spring Banana Tree": {
         "region_id": "spring banana tree",
@@ -131,6 +176,9 @@ LOCATIONS_DATA = {
         "room": 0x000f,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "springBananaTree",
+        "foggy_hints": [],
+        "clear_hint": "the Spring Banana tree grows",
+        "region": "Mt. Cucco"
     },
     "Goron Mountain: Item Across Pits": {
         "region_id": "goron mountain, across pits",
@@ -139,6 +187,9 @@ LOCATIONS_DATA = {
         "room": 0x001a,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "goronMountainPits",
+        "foggy_hints": [],
+        "clear_hint": "the Goron Mountain pits grants",
+        "region": "Goron Mountain"
     },
     "Mt. Cucco: Moving Platform Cave": {
         "region_id": "mt. cucco, platform cave",
@@ -148,6 +199,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x1f,
         "symbolic_name": "mtCuccoPlatformCave",
+        "foggy_hints": [],
+        "clear_hint": "the cave below the Spring Banana contains",
+        "region": "Mt. Cucco"
     },
     "Mt. Cucco: Diving Spot Outside D4": {
         "region_id": "diving spot outside D4",
@@ -157,6 +211,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1d,
         "symbolic_name": "divingSpotOutsideD4",
+        "foggy_hints": ["a wyrm's doorstep"],
+        "clear_hint": "the diving spot outside D4 contains",
+        "region": "Mt. Cucco"
     },
     "Western Coast: Black Beast's Chest": {
         "region_id": "black beast's chest",
@@ -164,6 +221,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc7f4,
         "room": 0x00f4,
         "collect": COLLECT_CHEST,
+        "foggy_hints": ["a mysterious Moldorm holds"],
+        "clear_hint": "the Black Beast holds",
+        "region": "Western Coast"
     },
     "Holodrum Plain: Old Man in Treehouse": {
         "region_id": "old man in treehouse",
@@ -173,6 +233,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb5,
         "symbolic_name": "oldManInTreehouse",
+        "foggy_hints": ["the seeker of essences holds"],
+        "clear_hint": "the old man seeking essences holds",
+        "region": "Holodrum Plain"
     },
     "Lost Woods: Pedestal Item": {
         "region_id": "lost woods",
@@ -182,6 +245,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x40,
         "symbolic_name": "lostWoodsPedestal",
+        "foggy_hints": ["a noble puzzle grants", "a seasonal maze grants"],
+        "clear_hint": "the Pedestal in Lost Woods contains",
+        "region": "Tarm Ruins"
     },
     "Samasa Desert: Item in Quicksand Pit": {
         "region_id": "samasa desert pit",
@@ -191,13 +257,19 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xbf,
         "symbolic_name": "samasaDesertPit",
+        "foggy_hints": ["a ghostly sand-dweller holds"],
+        "clear_hint": "the desert skull pit contains",
+        "region": "Samasa Desert"
     },
     "Samasa Desert: Chest on Cliff": {
         "region_id": "samasa desert chest",
         "vanilla_item": "Rang Ring L-1",
         "flag_byte": 0xc7ff,
         "room": 0x00ff,
-        "collect": COLLECT_CHEST
+        "collect": COLLECT_CHEST,
+        "foggy_hints": [],
+        "clear_hint": "the desert cliff chest contains",
+        "region": "Samasa Desert"
     },
     "Western Coast: Chest on Beach": {
         "region_id": "western coast after ship",
@@ -205,6 +277,9 @@ LOCATIONS_DATA = {
         "flag_byte": 0xc7e3,
         "room": 0x00e3,
         "collect": COLLECT_CHEST,
+        "foggy_hints": [],
+        "clear_hint": "the chest on the western beach contains",
+        "region": "Western Coast"
     },
     "Western Coast: Chest in House": {
         "region_id": "western coast after ship",
@@ -213,6 +288,9 @@ LOCATIONS_DATA = {
         "room": 0x0388,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd2,
+        "foggy_hints": [],
+        "clear_hint": "the chest in the Western Coast house contains",
+        "region": "Western Coast"
     },
     "Holodrum Plain: Chest in Flooded Cave South of Mrs. Ruul": {
         "region_id": "cave south of mrs. ruul",
@@ -221,6 +299,9 @@ LOCATIONS_DATA = {
         "room": 0x04e0,
         "collect": COLLECT_CHEST,
         "map_tile": 0xb3,
+        "foggy_hints": [],
+        "clear_hint": "the flooded cave near Mrs. Ruul contains",
+        "region": "Holodrum Plain"
     },
     "Holodrum Plain: Chest in Flooded Cave Behind Mushrooms": {
         "region_id": "cave north of D1",
@@ -229,6 +310,9 @@ LOCATIONS_DATA = {
         "room": 0x04e1,
         "collect": COLLECT_CHEST,
         "map_tile": 0x87,
+        "foggy_hints": [],
+        "clear_hint": "the mushroom cave above D1 contains",
+        "region": "Holodrum Plain"
     },
     "Woods of Winter: Chest in Autumn Cave Near D2": {
         "region_id": "cave outside D2",
@@ -237,6 +321,9 @@ LOCATIONS_DATA = {
         "room": 0x05b3,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8e,
+        "foggy_hints": [],
+        "clear_hint": "the mushroom cave near D2 contains",
+        "region": "Woods of Winter"
     },
     "Woods of Winter: Chest in Cave Behind Rockslide": {
         "region_id": "woods of winter, 1st cave",
@@ -245,6 +332,9 @@ LOCATIONS_DATA = {
         "room": 0x05b4,
         "collect": COLLECT_CHEST,
         "map_tile": 0x7d,
+        "foggy_hints": [],
+        "clear_hint": "the rock wall in Woods of Winter contains",
+        "region": "Woods of Winter"
     },
     "Sunken City: Chest in Summer Cave": {
         "region_id": "sunken city, summer cave",
@@ -253,6 +343,9 @@ LOCATIONS_DATA = {
         "room": 0x05b5,
         "collect": COLLECT_CHEST,
         "map_tile": 0x4f,
+        "foggy_hints": [],
+        "clear_hint": "Sunken City's Summer cave contains",
+        "region": "Sunken City"
     },
     "Sunken City: Syrup Shop #1": {
         "region_id": "syrup shop",
@@ -265,6 +358,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x5e,
         "symbolic_name": "syrupShop1",
+        "foggy_hints": ["an old shopkeeper sells", "a mushroom seeker sells"],
+        "clear_hint": "Syrup's shop sells",
+        "region": "Sunken City"
     },
     "Sunken City: Syrup Shop #2": {
         "region_id": "syrup shop",
@@ -277,6 +373,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x5e,
         "symbolic_name": "syrupShop2",
+        "foggy_hints": ["an old shopkeeper sells", "a mushroom seeker sells"],
+        "clear_hint": "Syrup's shop sells",
+        "region": "Sunken City"
     },
     "Sunken City: Syrup Shop #3": {
         "region_id": "syrup shop",
@@ -289,6 +388,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x5e,
         "symbolic_name": "syrupShop3",
+        "foggy_hints": ["an old shopkeeper sells", "a mushroom seeker sells"],
+        "clear_hint": "Syrup's shop sells",
+        "region": "Sunken City"
     },
 
     "Eyeglass Lake: Chest in Dried Lake East Cave": {
@@ -298,6 +400,9 @@ LOCATIONS_DATA = {
         "room": 0x05c0,
         "collect": COLLECT_CHEST,
         "map_tile": 0xaa,
+        "foggy_hints": [],
+        "clear_hint": "the eastern cave in the dried lake contains",
+        "region": "North Horon"
     },
     "Goron Mountain: Chest Across Lava": {
         "region_id": "chest in goron mountain",
@@ -306,6 +411,9 @@ LOCATIONS_DATA = {
         "room": 0x05c8,
         "collect": COLLECT_CHEST,
         "map_tile": 0x18,
+        "foggy_hints": [],
+        "clear_hint": "the lava chest in Goron Mountain contains",
+        "region": "Goron Mountain"
     },
     "Natzu Region: Chest in Northern Cave": {
         "region_id": "natzu region, across water",
@@ -314,6 +422,9 @@ LOCATIONS_DATA = {
         "room": 0x050e,
         "collect": COLLECT_CHEST,
         "map_tile": 0x49,
+        "foggy_hints": [],
+        "clear_hint": "the northern cave in Natzu contains",
+        "region": "Natzu"
     },
     "Mt. Cucco: Chest Behind Talon": {
         "region_id": "talon trade",
@@ -323,6 +434,9 @@ LOCATIONS_DATA = {
         "room": 0x05b6,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1b,
+        "foggy_hints": [],
+        "clear_hint": "Talon holds",
+        "region": "Mt. Cucco"
     },
     "Tarm Ruins: Chest in Rabbit Hole Under Tree": {
         "region_id": "tarm ruins, under tree",
@@ -331,6 +445,9 @@ LOCATIONS_DATA = {
         "room": 0x039b,
         "collect": COLLECT_CHEST,
         "map_tile": 0x10,
+        "foggy_hints": [],
+        "clear_hint": "the mushroom cave next to the Tarm Ruins seed tree contains",
+        "region": "Tarm Ruins"
     },
     "Eastern Suburbs: Chest in Spring Cave": {
         "region_id": "eastern suburbs spring cave",
@@ -339,6 +456,9 @@ LOCATIONS_DATA = {
         "room": 0x04f7,
         "collect": COLLECT_CHEST,
         "map_tile": 0xcc,
+        "foggy_hints": [],
+        "clear_hint": "the Eastern Suburbs Spring cave contins",
+        "region": "Eastern Suburbs"
     },
     "Eyeglass Lake: Chest in Dried Lake West Cave": {
         "region_id": "dry eyeglass lake, west cave",
@@ -347,6 +467,9 @@ LOCATIONS_DATA = {
         "room": 0x04fb,
         "collect": COLLECT_CHEST,
         "map_tile": 0xa7,
+        "foggy_hints": [],
+        "clear_hint": "the western cave in the dried lake contains",
+        "region": "North Horon"
     },
     "Woods of Winter: Chest in Waterfall Cave": {
         "region_id": "woods of winter, 2nd cave",
@@ -355,6 +478,9 @@ LOCATIONS_DATA = {
         "room": 0x0512,
         "collect": COLLECT_CHEST,
         "map_tile": 0x7e,
+        "foggy_hints": [],
+        "clear_hint": "the Moblin Road waterfall cave contains",
+        "region": "Woods of Winter"
     },
     "Horon Village: Shop #1": {
         "region_id": "horon shop",
@@ -366,6 +492,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "horonShop1",
+        "foggy_hints": [],
+        "clear_hint": "the Horon shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Shop #2": {
         "region_id": "horon shop",
@@ -377,6 +506,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "horonShop2",
+        "foggy_hints": [],
+        "clear_hint": "the Horon shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Shop #3": {
         "region_id": "horon shop",
@@ -389,6 +521,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "horonShop3",
+        "foggy_hints": [],
+        "clear_hint": "the Horon shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Member's Shop #1": {
         "region_id": "member's shop",
@@ -400,6 +535,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "memberShop1",
+        "foggy_hints": ["an exclusive club"],
+        "clear_hint": "the member's shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Member's Shop #2": {
         "region_id": "member's shop",
@@ -411,6 +549,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "memberShop2",
+        "foggy_hints": ["an exclusive club"],
+        "clear_hint": "the member's shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Member's Shop #3": {
         "region_id": "member's shop",
@@ -423,6 +564,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe6,
         "symbolic_name": "memberShop3",
+        "foggy_hints": ["an exclusive club"],
+        "clear_hint": "the member's shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Advance Shop #1": {
         "region_id": "advance shop",
@@ -435,6 +579,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc5,
         "symbolic_name": "advanceShop1",
+        "foggy_hints": ["a newer device's privilege"],
+        "clear_hint": "the advance shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Advance Shop #2": {
         "region_id": "advance shop",
@@ -447,6 +594,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc5,
         "symbolic_name": "advanceShop2",
+        "foggy_hints": ["a newer device's privilege"],
+        "clear_hint": "the advance shop sells",
+        "region": "Horon Village"
     },
     "Horon Village: Advance Shop #3": {
         "region_id": "advance shop",
@@ -459,6 +609,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc5,
         "symbolic_name": "advanceShop3",
+        "foggy_hints": ["a newer device's privilege"],
+        "clear_hint": "the advance shop sells",
+        "region": "Horon Village"
     },
     "Subrosia: Tower of Winter": {
         "region_id": "tower of winter",
@@ -468,6 +621,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "towerOfWinter",
+        "foggy_hints": ["a blue fairy grants", "a cold fairy grants"],
+        "clear_hint": "the Winter tower contains",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Tower of Summer": {
         "region_id": "tower of summer",
@@ -477,6 +633,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "towerOfSummer",
+        "foggy_hints": ["a red fairy grants", "a warm fairy grants"],
+        "clear_hint": "the Summer tower contains",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Tower of Spring": {
         "region_id": "tower of spring",
@@ -486,6 +645,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "towerOfSpring",
+        "foggy_hints": ["a green fairy grants", "a flowery fairy grants"],
+        "clear_hint": "the Spring tower contains",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Tower of Autumn": {
         "region_id": "tower of autumn",
@@ -495,6 +657,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "towerOfAutumn",
+        "foggy_hints": ["an orange fairy grants"],
+        "clear_hint": "the Autumn tower contains",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Dance Hall Reward": {
         "region_id": "subrosian dance hall",
@@ -504,6 +669,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x9a,
         "symbolic_name": "subrosianDanceHall",
+        "foggy_hints": ["a Subrosian pastime rewards"],
+        "clear_hint": "dancing rewards",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Temple of Seasons": {
         "region_id": "temple of seasons",
@@ -513,6 +681,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "templeOfSeasons",
+        "foggy_hints": ["a convergence of fairies grant"],
+        "clear_hint": "the Temple of Seasons contains",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Seaside Digging Spot": {
         "region_id": "subrosia seaside",
@@ -522,6 +693,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0xb0,
         "symbolic_name": "subrosiaSeaside",
+        "foggy_hints": [],
+        "clear_hint": "digging on the beach unearths",
+        "region": "Subrosia Market"
     },
     "Subrosia: Wilds Chest": {
         "region_id": "subrosian wilds chest",
@@ -530,6 +704,9 @@ LOCATIONS_DATA = {
         "room": 0x0141,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1e,
+        "foggy_hints": [],
+        "clear_hint": "the Subrosia Wilds chest contains",
+        "region": "Subrosia Village"
     },
     "Subrosia: Wilds Digging Spot": {
         "region_id": "subrosian wilds digging spot",
@@ -539,6 +716,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosianWildsDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "digging in Subrosia Wilds unearths",
+        "region": "Subrosia Village"
     },
     "Subrosia: Chest Above Magnet Cave": {
         "region_id": "subrosia village chest",
@@ -547,6 +727,9 @@ LOCATIONS_DATA = {
         "room": 0x0158,
         "collect": COLLECT_CHEST,
         "map_tile": 0xb0,
+        "foggy_hints": [],
+        "clear_hint": "the Subrosia furnace cave contains",
+        "region": "Subrosia Furnace"
     },
     "Subrosia: Northwest Open Cave": {
         "region_id": "subrosia, open cave",
@@ -555,6 +738,9 @@ LOCATIONS_DATA = {
         "room": 0x04f1,
         "collect": COLLECT_CHEST,
         "map_tile": 0x25,
+        "foggy_hints": [],
+        "clear_hint": "the open Subrosia Mountain cave contins",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Northwest Locked Cave": {
         "region_id": "subrosia, locked cave",
@@ -563,6 +749,9 @@ LOCATIONS_DATA = {
         "room": 0x05c6,
         "collect": COLLECT_CHEST,
         "map_tile": 0x25,
+        "foggy_hints": [],
+        "clear_hint": "the locked Subrosia Mountain cave contins",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Market #1": {
         "region_id": "subrosia market star ore",
@@ -574,6 +763,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "subrosianMarket1",
+        "foggy_hints": ["an otherworldly peddler sells"],
+        "clear_hint": "the Subrosia Market sells",
+        "region": "Subrosia Market"
     },
     "Subrosia: Market #2": {
         "region_id": "subrosia market ore chunks",
@@ -585,6 +777,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "subrosianMarket2",
+        "foggy_hints": ["an otherworldly peddler sells"],
+        "clear_hint": "the Subrosia Market sells",
+        "region": "Subrosia Market"
     },
     "Subrosia: Market #3": {
         "region_id": "subrosia market ore chunks",
@@ -596,6 +791,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "subrosianMarket3",
+        "foggy_hints": ["an otherworldly peddler sells"],
+        "clear_hint": "the Subrosia Market sells",
+        "region": "Subrosia Market"
     },
     "Subrosia: Market #4": {
         "region_id": "subrosia market ore chunks",
@@ -607,6 +805,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "subrosianMarket4",
+        "foggy_hints": ["an otherworldly peddler sells"],
+        "clear_hint": "the Subrosia Market sells",
+        "region": "Subrosia Market"
     },
     "Subrosia: Market #5": {
         "region_id": "subrosia market ore chunks",
@@ -618,6 +819,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "subrosianMarket5",
+        "foggy_hints": ["an otherworldly peddler sells"],
+        "clear_hint": "the Subrosia Market sells",
+        "region": "Subrosia Market"
     },
     "Subrosia: Item Smelted in Great Furnace": {
         "region_id": "great furnace",
@@ -627,6 +831,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb9,
         "symbolic_name": "greatFurnace",
+        "foggy_hints": [],
+        "clear_hint": "the Great Furnace creates",
+        "region": "Subrosia Furnace"
     },
     "Subrosia: Smithy Hard Ore Reforge": {
         "region_id": "subrosian smithy ore",
@@ -637,6 +844,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "subrosianSmithyOre",
+        "foggy_hints": [],
+        "clear_hint": "forging the Hard Ore creates",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Smithy Rusty Bell Reforge": {
         "region_id": "subrosian smithy bell",
@@ -647,6 +857,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "subrosianSmithyBell",
+        "foggy_hints": [],
+        "clear_hint": "polishing the Rusty Bell creates",
+        "region": "Subrosia Mountain"
     },
 
     "Hero's Cave: Topmost Chest": {
@@ -657,6 +870,9 @@ LOCATIONS_DATA = {
         "room": 0x0403,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd4,
+        "foggy_hints": [],
+        "clear_hint": "the chest surrounded by Gels and Keese in Hero's Cave contains",
+        "region": "Hero's Cave"
     },
     "Hero's Cave: Final Chest": {
         "region_id": "d0 sword chest",
@@ -667,6 +883,9 @@ LOCATIONS_DATA = {
         # Not a real chest, so we don't apply the usual COLLECT_CHEST
         "map_tile": 0xd4,
         "symbolic_name": "d0SwordChest",
+        "foggy_hints": [],
+        "clear_hint": "the final chest in Hero's Cave contains",
+        "region": "Hero's Cave"
     },
     "Hero's Cave: Item in Basement Under Keese Room": {
         "region_id": "d0 hidden 2d section",
@@ -676,7 +895,10 @@ LOCATIONS_DATA = {
         "room": 0x0601,
         "collect": COLLECT_TOUCH,
         "map_tile": 0xd4,
-        "symbolic_name": "d0HiddenBasement"
+        "symbolic_name": "d0HiddenBasement",
+        "foggy_hints": [],
+        "clear_hint": "the basement item in Hero's Cave is",
+        "region": "Hero's Cave"
     },
     "Hero's Cave: Alternative Entrance Chest": {
         "region_id": "d0 rupee chest",
@@ -686,6 +908,9 @@ LOCATIONS_DATA = {
         "room": 0x0405,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd4,
+        "foggy_hints": [],
+        "clear_hint": "the alternate entrace to Hero's Cave grants",
+        "region": "Hero's Cave"
     },
 
     "Gnarled Root Dungeon: Drop in Right Stalfos Room": {
@@ -697,6 +922,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x96,
         "symbolic_name": "d1StalfosDrop",
+        "foggy_hints": ["undead foes in a twisted tree protect"],
+        "clear_hint": "Stalfos in Gnarled Root Dungeon drop",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Item in Basement": {
         "region_id": "d1 basement",
@@ -707,6 +935,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x96,
         "symbolic_name": "d1Basement",
+        "foggy_hints": ["defeating the boomerang twins grants"],
+        "clear_hint": "defeating Goriya Bros grants",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest in Block-pushing Room": {
         "region_id": "d1 block-pushing room",
@@ -716,6 +947,9 @@ LOCATIONS_DATA = {
         "room": 0x040d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": ["pushing blocks in a twisted tree"],
+        "clear_hint": "pushing blocks in Gnarled Root Dungeon grants",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest Near Railway": {
         "region_id": "d1 railway chest",
@@ -725,6 +959,9 @@ LOCATIONS_DATA = {
         "room": 0x0410,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": ["a minecart in a twisted tree"],
+        "clear_hint": "taking the minecart in Gnarled Root Dungeon",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest in Floormaster Room": {
         "region_id": "d1 floormaster room",
@@ -734,6 +971,9 @@ LOCATIONS_DATA = {
         "room": 0x0417,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": ["hands in a twisted tree protect"],
+        "clear_hint": "dodging Floormasters grants",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest Near Railway Lever": {
         "region_id": "d1 lever room",
@@ -743,6 +983,9 @@ LOCATIONS_DATA = {
         "room": 0x040f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": ["a lever in a twisted tree sits next to"],
+        "clear_hint": "the chest near the lever in Gnarled Root Dungeon contins",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest in Left Stalfos Room": {
         "region_id": "d1 stalfos chest",
@@ -752,6 +995,9 @@ LOCATIONS_DATA = {
         "room": 0x0419,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": ["undead foes in a twisted tree protect"],
+        "clear_hint": "Stalfos in Gnarled Root Dungeon protect",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Hidden Chest Revealed by Button": {
         "region_id": "d1 button chest",
@@ -761,6 +1007,9 @@ LOCATIONS_DATA = {
         "room": 0x0411,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": [],
+        "clear_hint": "a button protected by a Chaser grants",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Chest in Goriya Room": {
         "region_id": "d1 goriya chest",
@@ -770,6 +1019,9 @@ LOCATIONS_DATA = {
         "room": 0x0414,
         "collect": COLLECT_CHEST,
         "map_tile": 0x96,
+        "foggy_hints": [],
+        "clear_hint": "three Goriyas protect",
+        "region": "Gnarled Root Dungeon"
     },
     "Gnarled Root Dungeon: Boss Reward": {
         "region_id": "d1 boss",
@@ -779,7 +1031,10 @@ LOCATIONS_DATA = {
         "room": 0x0412,
         "collect": COLLECT_POOF,
         "map_tile": 0x96,
-        "symbolic_name": "d1Boss"
+        "symbolic_name": "d1Boss",
+        "foggy_hints": ["a dragon protects"],
+        "clear_hint": "Aquamentus protects",
+        "region": "Gnarled Root Dungeon"
     },
 
     "Snake's Remains: Drop in Left Rope Room": {
@@ -791,6 +1046,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x8d,
         "symbolic_name": "d2RopeDrop",
+        "foggy_hints": [],
+        "clear_hint": "Ropes in Snake's Remains drop",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest in Distant Moblins Room": {
         "region_id": "d2 moblin chest",
@@ -800,6 +1058,9 @@ LOCATIONS_DATA = {
         "room": 0x042a,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "Moblins across a gap protect",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest in Rollers Section": {
         "region_id": "d2 roller chest",
@@ -809,6 +1070,9 @@ LOCATIONS_DATA = {
         "room": 0x041f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "pushing rollers before Facade grants",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest Left from Entrance": {
         "region_id": "d2 left from entrance",
@@ -818,6 +1082,9 @@ LOCATIONS_DATA = {
         "room": 0x0438,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "the starting chest in Snake's Remains contains",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest Behind Pots in Hardhat Room": {
         "region_id": "d2 pot chest",
@@ -827,6 +1094,9 @@ LOCATIONS_DATA = {
         "room": 0x042b,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "Hardhats in Snake's Remains protect",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest in Right Rope Room": {
         "region_id": "d2 rope chest",
@@ -836,6 +1106,9 @@ LOCATIONS_DATA = {
         "room": 0x0436,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "Ropes in Snake's Remains protect",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest in Moving Blades Room": {
         "region_id": "d2 blade chest",
@@ -845,6 +1118,9 @@ LOCATIONS_DATA = {
         "room": 0x0431,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "the Big Blade chest in Snake's Remains contains",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest in Bomb Spiral Maze Room": {
         "region_id": "d2 spiral chest",
@@ -854,6 +1130,9 @@ LOCATIONS_DATA = {
         "room": 0x042d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "the timed bomb puzzle in Snake's Remains grants",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Chest on Terrace": {
         "region_id": "d2 terrace chest",
@@ -863,6 +1142,9 @@ LOCATIONS_DATA = {
         "room": 0x0424,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8d,
+        "foggy_hints": [],
+        "clear_hint": "the terrace chest in Snake's Remains contains",
+        "region": "Snake's Remains"
     },
     "Snake's Remains: Boss Reward": {
         "region_id": "d2 boss",
@@ -872,7 +1154,10 @@ LOCATIONS_DATA = {
         "room": 0x0429,
         "collect": COLLECT_POOF,
         "map_tile": 0x8d,
-        "symbolic_name": "d2Boss"
+        "symbolic_name": "d2Boss",
+        "foggy_hints": [],
+        "clear_hint": "Dodongo protects",
+        "region": "Snake's Remains"
     },
 
     "Poison Moth's Lair (B1F): Chest in Roller Room": {
@@ -883,6 +1168,9 @@ LOCATIONS_DATA = {
         "room": 0x044c,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "pushing rollers in Poison Moth's Lair grants",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Chest in Mimics Room": {
         "region_id": "d3 mimic chest",
@@ -892,6 +1180,9 @@ LOCATIONS_DATA = {
         "room": 0x0450,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "Mimics on quicksand protect",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Chest Above East Trampoline": {
         "region_id": "d3 zol chest",
@@ -901,6 +1192,9 @@ LOCATIONS_DATA = {
         "room": 0x044f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "a Zol above a trampoline protects",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (B1F): Chest in Watery Room": {
         "region_id": "d3 water room",
@@ -910,6 +1204,9 @@ LOCATIONS_DATA = {
         "room": 0x0441,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "the water room in Poison Moth's Lair contains",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (B1F): Chest on Quicksand Terrace": {
         "region_id": "d3 quicksand terrace",
@@ -919,6 +1216,9 @@ LOCATIONS_DATA = {
         "room": 0x0444,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "the terrace before Omuai contains",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Chest in Moldorm Room": {
         "region_id": "d3 moldorm chest",
@@ -928,6 +1228,9 @@ LOCATIONS_DATA = {
         "room": 0x0454,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "Moldorms in Poison Moth's Lair protect",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Chest Above West Trampoline & Owl": {
         "region_id": "d3 trampoline chest",
@@ -937,6 +1240,9 @@ LOCATIONS_DATA = {
         "room": 0x044d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": ["a flying owl in the moth's domain reveals"],
+        "clear_hint": "the chest above the trampoline owl in Poison Moth's Lair contains",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Chest in Room Behind Hidden Cracked Wall": {
         "region_id": "d3 bombed wall chest",
@@ -946,6 +1252,9 @@ LOCATIONS_DATA = {
         "room": 0x0451,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "the cracked wall behind Moldorms holds",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (B1F): Chest in Moving Blade Room": {
         "region_id": "d3 giant blade room",
@@ -955,6 +1264,9 @@ LOCATIONS_DATA = {
         "room": 0x0446,
         "collect": COLLECT_CHEST,
         "map_tile": 0x60,
+        "foggy_hints": [],
+        "clear_hint": "the Big Blade in Poison Moth's lair protects",
+        "region": "Poison Moth's Lair"
     },
     "Poison Moth's Lair (1F): Boss Reward": {
         "region_id": "d3 boss",
@@ -964,7 +1276,10 @@ LOCATIONS_DATA = {
         "room": 0x0453,
         "collect": COLLECT_POOF,
         "map_tile": 0x60,
-        "symbolic_name": "d3Boss"
+        "symbolic_name": "d3Boss",
+        "foggy_hints": [],
+        "clear_hint": "Mothula protects",
+        "region": "Poison Moth's Lair"
     },
 
     "Dancing Dragon Dungeon (2F): Pots on Buttons Puzzle Drop": {
@@ -976,6 +1291,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x1d,
         "symbolic_name": "d4PotPuzzle",
+        "foggy_hints": [],
+        "clear_hint": "pot push drops",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (2F): Chest North of Entrance": {
         "region_id": "d4 north of entrance",
@@ -985,6 +1303,9 @@ LOCATIONS_DATA = {
         "room": 0x047f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the chest north of the Dancing Dragon Dungeon entrance contains",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Chest in Southwest Quadrant of Beamos Room": {
         "region_id": "d4 maze chest",
@@ -994,6 +1315,9 @@ LOCATIONS_DATA = {
         "room": 0x0469,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the corner of the Beamos room contains",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Dark Room Chest": {
         "region_id": "d4 dark room",
@@ -1003,6 +1327,9 @@ LOCATIONS_DATA = {
         "room": 0x046d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the dark room chest contains",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (2F): Chest in Water Donut Room": {
         "region_id": "d4 water ring room",
@@ -1012,6 +1339,9 @@ LOCATIONS_DATA = {
         "room": 0x0483,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the water donut room holds",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (2F): Pool Drop": {
         "region_id": "d4 pool",
@@ -1022,6 +1352,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x1d,
         "symbolic_name": "d4Pool",
+        "foggy_hints": [],
+        "clear_hint": "dropped into the pool is",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Chest on Small Terrace": {
         "region_id": "d4 terrace",
@@ -1032,6 +1365,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_D4_SCRUB_ROOM,
         "is_chest": True,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the terrace chest after the minecart torches contains",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Chest Revealed by Minecart Torches": {
         "region_id": "d4 torch chest",
@@ -1041,6 +1377,9 @@ LOCATIONS_DATA = {
         "room": 0x0464,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "lighting torches on a minecart",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Crumbling Room Chest": {
         "region_id": "d4 cracked floor room",
@@ -1050,6 +1389,9 @@ LOCATIONS_DATA = {
         "room": 0x0473,
         "collect": COLLECT_CHEST,
         "map_tile": 0x1d,
+        "foggy_hints": [],
+        "clear_hint": "the crumbling room in Dancing Dragon Dungeon contains",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (1F): Eye Diving Spot Item": {
         "region_id": "d4 dive spot",
@@ -1060,6 +1402,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIVE,
         "map_tile": 0x1d,
         "symbolic_name": "d4DiveSpot",
+        "foggy_hints": [],
+        "clear_hint": "diving into the right eye reveals",
+        "region": "Dancing Dragon Dungeon"
     },
     "Dancing Dragon Dungeon (B1F): Boss Reward": {
         "region_id": "d4 boss",
@@ -1069,7 +1414,10 @@ LOCATIONS_DATA = {
         "room": 0x045f,
         "collect": COLLECT_POOF,
         "map_tile": 0x1d,
-        "symbolic_name": "d4Boss"
+        "symbolic_name": "d4Boss",
+        "foggy_hints": [],
+        "clear_hint": "Gohma protects",
+        "region": "Dancing Dragon Dungeon"
     },
 
     "Unicorn's Cave: Right Cart Chest": {
@@ -1080,6 +1428,9 @@ LOCATIONS_DATA = {
         "room": 0x0499,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "taking the right minecart in Unicorn's Cave grants",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Chest Left from Entrance": {
         "region_id": "d5 left chest",
@@ -1089,6 +1440,9 @@ LOCATIONS_DATA = {
         "room": 0x04a3,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the chest across the first magnet pit in Unicorn's Cave contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Magnet Gloves Chest": {
         "region_id": "d5 magnet ball chest",
@@ -1098,6 +1452,9 @@ LOCATIONS_DATA = {
         "room": 0x0489,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the chest across the water in Unicorn's Cave contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Terrace Chest": {
         "region_id": "d5 terrace chest",
@@ -1107,6 +1464,9 @@ LOCATIONS_DATA = {
         "room": 0x0497,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the terrace chest in Unicorn's Cave contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Armos Puzzle Room Chest": {
         "region_id": "d5 armos chest",
@@ -1117,6 +1477,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_D5_ARMOS_PUZZLE,
         "map_tile": 0x8a,
         "symbolic_name": "d5ArmosChest",
+        "foggy_hints": [],
+        "clear_hint": "the Armos puzzle in Unicorn's Cave reveals",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Gibdo Room Chest": {
         "region_id": "d5 gibdo/zol chest",
@@ -1126,6 +1489,9 @@ LOCATIONS_DATA = {
         "room": 0x048f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "Gibdos and Zols protect",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Quicksand Spiral Chest": {
         "region_id": "d5 spiral chest",
@@ -1135,6 +1501,9 @@ LOCATIONS_DATA = {
         "room": 0x049d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the quicksand spiral chest contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Magnet Spinner Chest": {
         "region_id": "d5 spinner chest",
@@ -1144,6 +1513,9 @@ LOCATIONS_DATA = {
         "room": 0x049f,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the spinning magnet chest contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Chest in Right Half of Minecart Bay Room": {
         "region_id": "d5 stalfos room",
@@ -1153,6 +1525,9 @@ LOCATIONS_DATA = {
         "room": 0x04a5,
         "collect": COLLECT_CHEST,
         "map_tile": 0x8a,
+        "foggy_hints": [],
+        "clear_hint": "the third minecart in Unicorn's Cave grants",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Treadmills Basement Item": {
         "region_id": "d5 basement",
@@ -1163,6 +1538,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x8a,
         "symbolic_name": "d5Basement",
+        "foggy_hints": [],
+        "clear_hint": "Unicorn's Cave basement contains",
+        "region": "Unicorn's Cave"
     },
     "Unicorn's Cave: Boss Reward": {
         "region_id": "d5 boss",
@@ -1172,7 +1550,10 @@ LOCATIONS_DATA = {
         "room": 0x048c,
         "collect": COLLECT_POOF,
         "map_tile": 0x8a,
-        "symbolic_name": "d5Boss"
+        "symbolic_name": "d5Boss",
+        "foggy_hints": [],
+        "clear_hint": "Digdogger protects",
+        "region": "Unicorn's Cave"
     },
 
     "Ancient Ruins (1F): Magnet Ball Puzzle Drop": {
@@ -1184,6 +1565,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x00,
         "symbolic_name": "d6MagnetBallDrop",
+        "foggy_hints": [],
+        "clear_hint": "pushing a magnet ball over a pit drops",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (2F): Chest North of Main Spinner": {
         "region_id": "d6 spinner north",
@@ -1193,6 +1577,9 @@ LOCATIONS_DATA = {
         "room": 0x04c2,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the north spinner chest contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (3F): Armos Hall Chest": {
         "region_id": "d6 armos hall",
@@ -1202,6 +1589,9 @@ LOCATIONS_DATA = {
         "room": 0x04d0,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the hall of Armos contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (1F): Crystal Maze Room Chest": {
         "region_id": "d6 crystal trap room",
@@ -1211,6 +1601,9 @@ LOCATIONS_DATA = {
         "room": 0x04af,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the crystal maze contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (1F): Crumbling Ground Room Chest": {
         "region_id": "d6 1F east",
@@ -1220,6 +1613,9 @@ LOCATIONS_DATA = {
         "room": 0x04b3,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the chest in Ancient Ruins' crumbling ground room contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (2F): Chest in Gibdo Room": {
         "region_id": "d6 2F gibdo chest",
@@ -1229,6 +1625,9 @@ LOCATIONS_DATA = {
         "room": 0x04bf,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": ["Gibdos after a trapped bridge protect"],
+        "clear_hint": "the Gibdo room chest in Ancient Ruins contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (2F): Chest Between 4 Armos": {
         "region_id": "d6 2F armos chest",
@@ -1238,6 +1637,9 @@ LOCATIONS_DATA = {
         "room": 0x04c3,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": ["a poor trap"],
+        "clear_hint": "the trapped Armos chest",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (1F): Chest in Beamos Room": {
         "region_id": "d6 beamos room",
@@ -1247,6 +1649,9 @@ LOCATIONS_DATA = {
         "room": 0x04ad,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the chest in the moving platform Beamos room contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (1F): Chest on Terrace Left of Entrance": {
         "region_id": "d6 1F terrace",
@@ -1256,6 +1661,9 @@ LOCATIONS_DATA = {
         "room": 0x04b0,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "the terrace chest in Ancient Ruins contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (2F): Chest After Time Trial": {
         "region_id": "d6 escape room",
@@ -1265,6 +1673,9 @@ LOCATIONS_DATA = {
         "room": 0x04c4,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": ["Indiana Jones can get", "Lara Croft can get"],
+        "clear_hint": "escaping the closing walls grants",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (2F): Chest on Red Terrace Before Vire": {
         "region_id": "d6 vire chest",
@@ -1274,6 +1685,9 @@ LOCATIONS_DATA = {
         "room": 0x04c1,
         "collect": COLLECT_CHEST,
         "map_tile": 0x00,
+        "foggy_hints": [],
+        "clear_hint": "Vire's trampoline chest contains",
+        "region": "Ancient Ruins"
     },
     "Ancient Ruins (5F): Boss Reward": {
         "region_id": "d6 boss",
@@ -1283,7 +1697,10 @@ LOCATIONS_DATA = {
         "room": 0x04d5,
         "collect": COLLECT_POOF,
         "map_tile": 0x00,
-        "symbolic_name": "d6Boss"
+        "symbolic_name": "d6Boss",
+        "foggy_hints": [],
+        "clear_hint": "Manhandla protects",
+        "region": "Ancient Ruins"
     },
 
     "Explorer's Crypt (1F): Chest in Wizzrobe Room": {
@@ -1294,6 +1711,9 @@ LOCATIONS_DATA = {
         "room": 0x0554,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "Blue and Red Wizzrobes protect",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B1F): Chest in Fast Moving Platform Room": {
         "region_id": "d7 spike chest",
@@ -1303,6 +1723,9 @@ LOCATIONS_DATA = {
         "room": 0x0544,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the spiked chest after the fast moving platform contains",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B2F): Stair Maze Chest": {
         "region_id": "d7 maze chest",
@@ -1312,6 +1735,9 @@ LOCATIONS_DATA = {
         "room": 0x0543,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the stair maze contains",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (1F): Chest Right of Entrance": {
         "region_id": "d7 right of entrance",
@@ -1321,6 +1747,9 @@ LOCATIONS_DATA = {
         "room": 0x055a,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the chest before first Poe Sister contains",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (1F): Chest Behind Cracked Wall": {
         "region_id": "d7 bombed wall chest",
@@ -1331,6 +1760,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_POE_SKIP_ROOM,
         "is_chest": True,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the chest behind the cracked wall in Explorer's Crypt contains",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B1F): Zol Button Drop": {
         "region_id": "d7 zol button",
@@ -1341,6 +1773,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0xd0,
         "symbolic_name": "d7ZolButton",
+        "foggy_hints": [],
+        "clear_hint": "the button surrounded by Zols drops",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B2F): Armos Puzzle Drop": {
         "region_id": "d7 armos puzzle",
@@ -1351,6 +1786,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0xd0,
         "symbolic_name": "d7ArmosPuzzle",
+        "foggy_hints": [],
+        "clear_hint": "the Armos puzzle in Explorer's Crypt reveals",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B1F): Chest Connected to Magnet Ball Button": {
         "region_id": "d7 magunesu chest",
@@ -1360,6 +1798,9 @@ LOCATIONS_DATA = {
         "room": 0x0547,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the magnet ball after defeating Magunesus reveals",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (1F): Chest Above Trampoline Near 2nd Poe": {
         "region_id": "d7 quicksand chest",
@@ -1369,6 +1810,9 @@ LOCATIONS_DATA = {
         "room": 0x0558,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "the second Poe Sister's trampoline grants",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B2F): Drop in Room North of Stair Maze": {
         "region_id": "d7 B2F drop",
@@ -1379,6 +1823,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0xd0,
         "symbolic_name": "d7DropNorthOfStairMaze",
+        "foggy_hints": [],
+        "clear_hint": "Stalfos and Wizzrobes after a magnet puzzle protect",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B1F): Chest in Jumping Stalfos Room": {
         "region_id": "d7 stalfos chest",
@@ -1388,6 +1835,9 @@ LOCATIONS_DATA = {
         "room": 0x0548,
         "collect": COLLECT_CHEST,
         "map_tile": 0xd0,
+        "foggy_hints": [],
+        "clear_hint": "jumping Stalfos in Explorer's Crypt protect",
+        "region": "Explorer's Crypt"
     },
     "Explorer's Crypt (B1F): Boss Reward": {
         "region_id": "d7 boss",
@@ -1397,7 +1847,10 @@ LOCATIONS_DATA = {
         "room": 0x0550,
         "collect": COLLECT_POOF,
         "map_tile": 0xd0,
-        "symbolic_name": "d7Boss"
+        "symbolic_name": "d7Boss",
+        "foggy_hints": [],
+        "clear_hint": "Gleeok protects",
+        "region": "Explorer's Crypt"
     },
 
     "Sword & Shield Dungeon (1F): Eye Drop Near Entrance": {
@@ -1409,6 +1862,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x04,
         "symbolic_name": "d8EyeDrop",
+        "foggy_hints": [],
+        "clear_hint": "a single eye drops",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Three Eyes Chest": {
         "region_id": "d8 three eyes chest",
@@ -1418,6 +1874,9 @@ LOCATIONS_DATA = {
         "room": 0x057d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "the first three eyes reveal",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Drop in Hardhat & Magnet Ball Room": {
         "region_id": "d8 hardhat drop",
@@ -1428,6 +1887,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x04,
         "symbolic_name": "d8HardhatDrop",
+        "foggy_hints": [],
+        "clear_hint": "a Hardhat and some Gels drop",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): U-Shaped Spiky Freezer Chest": {
         "region_id": "d8 spike room",
@@ -1437,6 +1899,9 @@ LOCATIONS_DATA = {
         "room": 0x058b,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "the spiked ice room chest contains",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (B1F): Chest Right of Spinner": {
         "region_id": "d8 spinner chest",
@@ -1446,6 +1911,9 @@ LOCATIONS_DATA = {
         "room": 0x0570,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Top Chest in Lava Bridge Room": {
         "region_id": "d8 armos chest",
@@ -1455,6 +1923,9 @@ LOCATIONS_DATA = {
         "room": 0x058d,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Bottom Chest in Lava Bridge Room": {
         "region_id": "d8 magnet ball room",
@@ -1464,6 +1935,9 @@ LOCATIONS_DATA = {
         "room": 0x058e,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Chest in Bombable Blocks Room": {
         "region_id": "d8 darknut chest",
@@ -1473,6 +1947,9 @@ LOCATIONS_DATA = {
         "room": 0x058c,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Chest on Terrace After Pols Voice Room": {
         "region_id": "d8 pols voice chest",
@@ -1482,6 +1959,9 @@ LOCATIONS_DATA = {
         "room": 0x0580,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Ghost Armos Puzzle Drop": {
         "region_id": "d8 ghost armos drop",
@@ -1492,6 +1972,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DROP,
         "map_tile": 0x04,
         "symbolic_name": "d8GhostArmosDrop",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (B1F): Southeast Lava Chest": {
         "region_id": "d8 SE lava chest",
@@ -1501,6 +1984,9 @@ LOCATIONS_DATA = {
         "room": 0x056b,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (B1F): Southwest Lava Chest": {
         "region_id": "d8 SW lava chest",
@@ -1510,6 +1996,9 @@ LOCATIONS_DATA = {
         "room": 0x056a,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (1F): Chest in Sparks & Pots Room": {
         "region_id": "d8 spark chest",
@@ -1519,6 +2008,9 @@ LOCATIONS_DATA = {
         "room": 0x058a,
         "collect": COLLECT_CHEST,
         "map_tile": 0x04,
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Sword & Shield Dungeon (B1F): Boss Reward": {
         "region_id": "d8 boss",
@@ -1528,7 +2020,10 @@ LOCATIONS_DATA = {
         "room": 0x0564,
         "collect": COLLECT_POOF,
         "map_tile": 0x04,
-        "symbolic_name": "d8Boss"
+        "symbolic_name": "d8Boss",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
 
     "Horon Village: Item Behind Small Tree": {
@@ -1538,6 +2033,9 @@ LOCATIONS_DATA = {
         "room": 0x00d8,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "horonHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Woods of Winter: Item Below Lake": {
         "region_id": "woods of winter heart piece",
@@ -1546,6 +2044,9 @@ LOCATIONS_DATA = {
         "room": 0x00af,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "woodsOfWinterHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Woods of Winter"
     },
     "Mt. Cucco: Item on Ledge": {
         "region_id": "mt. cucco heart piece",
@@ -1554,6 +2055,9 @@ LOCATIONS_DATA = {
         "room": 0x002d,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "mtCuccoHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Mt. Cucco"
     },
     "Eastern Suburbs: Item in Windmill Cave": {
         "region_id": "windmill heart piece",
@@ -1563,6 +2067,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xea,
         "symbolic_name": "windmillHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Eastern Suburbs"
     },
     "Western Coast: Item in Graveyard": {
         "region_id": "graveyard heart piece",
@@ -1571,6 +2078,9 @@ LOCATIONS_DATA = {
         "room": 0x00d1,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "graveyardHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Western Coast"
     },
     "Spool Swamp: Item Amidst Currents in Spring": {
         "region_id": "spool swamp heart piece",
@@ -1579,6 +2089,9 @@ LOCATIONS_DATA = {
         "room": 0x00b1,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "spoolSwampHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Spool Swamp"
     },
     "Temple Remains: Item in Cave Behind Rockslide": {
         "region_id": "temple remains heart piece",
@@ -1588,6 +2101,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x15,
         "symbolic_name": "templeRemainsHeartPiece",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Temple Remains"
     },
     "Horon Village: Item Behind Cracked Wall in Mayor's House": {
         "region_id": "mayor's house secret room",
@@ -1597,6 +2113,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc8,
         "symbolic_name": "mayorsHouseSecretRoom",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Subrosia: Item in House Above Strange Brothers Portal": {
         "region_id": "subrosian house",
@@ -1606,6 +2125,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "subrosianHouse",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Village"
     },
     "Subrosia: Item in Basement to Tower of Spring": {
         "region_id": "subrosian 2d cave",
@@ -1615,6 +2137,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "subrosian2dCave",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Village"
     },
 
     "Horon Village: Mayor's Gift": {
@@ -1625,6 +2150,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc8,
         "symbolic_name": "mayorGift",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Horon Village: Vasu's Gift": {
         "region_id": "vasu's gift",
@@ -1633,7 +2161,10 @@ LOCATIONS_DATA = {
         "room": 0x0391,
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe8,
-        "symbolic_name": "vasuGift"
+        "symbolic_name": "vasuGift",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Goron Mountain: Lonely Goron's Gift": {
         "region_id": "goron's gift",
@@ -1643,6 +2174,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x19,
         "symbolic_name": "goronGift",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Goron Mountain"
     },
 
     "Horon Village: Dr. Left Reward": {
@@ -1653,6 +2187,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xf9,
         "symbolic_name": "drLeftReward",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "North Horon: Malon Trade": {
         "region_id": "malon trade",
@@ -1662,6 +2199,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x88,
         "symbolic_name": "malonTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "North Horon"
     },
     "Maple Trade": {
         "region_id": "maple trade",
@@ -1670,6 +2210,9 @@ LOCATIONS_DATA = {
         "bit_mask": 0x08,
         "room": [],
         "symbolic_name": "mapleTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Maple"
     },
     "Holodrum Plain: Mrs. Ruul Trade": {
         "region_id": "mrs. ruul trade",
@@ -1679,6 +2222,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xa3,
         "symbolic_name": "mrsRuulTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Holodrum Plain"
     },
     "Subrosia: Subrosian Chef Trade": {
         "region_id": "subrosian chef trade",
@@ -1688,6 +2234,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x9a,
         "symbolic_name": "subrosianChefTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Goron Mountain: Biggoron Trade": {
         "region_id": "biggoron trade",
@@ -1697,6 +2246,9 @@ LOCATIONS_DATA = {
         "room": 0x0008,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "biggoronTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Goron Mountain"
     },
     "Sunken City: Ingo Trade": {
         "region_id": "ingo trade",
@@ -1706,6 +2258,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x4d,
         "symbolic_name": "ingoTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sunken City"
     },
     "North Horon: Yelling Old Man Trade": {
         "region_id": "old man trade",
@@ -1714,6 +2269,9 @@ LOCATIONS_DATA = {
         "room": 0x00b7,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "yellingOldManTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "North Horon"
     },
     "Mt. Cucco: Talon Trade": {
         "region_id": "talon trade",
@@ -1723,6 +2281,9 @@ LOCATIONS_DATA = {
         "room": 0x05b6,
         "map_tile": 0x1b,
         "symbolic_name": "talonTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Mt. Cucco"
     },
     "Sunken City: Syrup Trade": {
         "region_id": "syrup trade",
@@ -1732,6 +2293,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x5e,
         "symbolic_name": "syrupTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sunken City"
     },
     "Horon Village: Tick Tock Trade": {
         "region_id": "tick tock trade",
@@ -1741,6 +2305,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xd7,
         "symbolic_name": "tickTockTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Eastern Suburbs: Guru-Guru Trade": {
         "region_id": "guru-guru trade",
@@ -1749,6 +2316,9 @@ LOCATIONS_DATA = {
         "room": 0x00da,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "guruguruTrade",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Eastern Suburbs"
     },
 
     "Subrosia: Buried Bomb Flower": {
@@ -1759,6 +2329,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb9,
         "symbolic_name": "bombFlower",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Furnace"
     },
     "Subrosia: Sign-Loving Guy Reward": {
         "region_id": "subrosian sign guy",
@@ -1768,6 +2341,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb9,
         "symbolic_name": "subrosianSignLovingGuy",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Furnace"
     },
     # Maku seed is 0xC85D
 
@@ -1781,6 +2357,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xf9,
         "symbolic_name": "oldManHoronVillage",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "North Horon: Old Man Near D1": {
         "region_id": "old man near d1",
@@ -1792,6 +2371,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x97,
         "symbolic_name": "oldManNearD1",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "North Horon"
     },
     "Holodrum Plain: Old Man Near Blaino's Gym": {
         "region_id": "old man near blaino",
@@ -1803,6 +2385,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x76,
         "symbolic_name": "oldManNearBlaino",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Holodrum Plain"
     },
     "Goron Mountain: Old Man": {
         "region_id": "old man in goron mountain",
@@ -1814,6 +2399,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x28,
         "symbolic_name": "oldManGoronMountain",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Goron Mountain"
     },
     "Western Coast: Old Man": {
         "region_id": "old man near western coast house",
@@ -1825,6 +2413,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xd2,
         "symbolic_name": "oldManWesternCoast",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Western Coast"
     },
     "Woods of Winter: Old Man": {
         "region_id": "old man near holly's house",
@@ -1836,6 +2427,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x8f,
         "symbolic_name": "oldManWoodsOfWinter",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Woods of Winter"
     },
     "Holodrum Plain: Old Man Near Mrs. Ruul's House": {
         "region_id": "old man near mrs. ruul",
@@ -1847,6 +2441,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xa4,
         "symbolic_name": "oldManGhastlyStump",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Holodrum Plain"
     },
     "Tarm Ruins: Old Man Near D6": {
         "region_id": "old man near d6",
@@ -1858,6 +2455,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x02,
         "symbolic_name": "oldManTarmRuins",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Tarm Ruins"
     },
 
     "North Horon: Golden Beasts Old Man": {
@@ -1868,6 +2468,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xa6,
         "symbolic_name": "goldenBeastsOldMan",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "North Horon"
     },
 
     "Horon Village: Seed Tree": {
@@ -1877,6 +2480,9 @@ LOCATIONS_DATA = {
         "room": 0x00f8,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "horonVillageSeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Woods of Winter: Seed Tree": {
         "region_id": "woods of winter tree",
@@ -1885,6 +2491,9 @@ LOCATIONS_DATA = {
         "room": 0x009e,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "woodsOfWinterSeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Woods of Winter"
     },
     "Holodrum Plain: Seed Tree": {
         "region_id": "north horon tree",
@@ -1893,6 +2502,9 @@ LOCATIONS_DATA = {
         "room": 0x0067,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "northHoronSeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Holodrum Plain"
     },
     "Spool Swamp: Seed Tree": {
         "region_id": "spool swamp tree",
@@ -1901,6 +2513,9 @@ LOCATIONS_DATA = {
         "room": 0x0072,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "spoolSwampSeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Spool Swamp"
     },
     "Sunken City: Seed Tree": {
         "region_id": "sunken city tree",
@@ -1909,6 +2524,9 @@ LOCATIONS_DATA = {
         "room": 0x005f,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "sunkenCitySeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sunken City"
     },
     "Tarm Ruins: Seed Tree": {
         "region_id": "tarm ruins tree",
@@ -1917,6 +2535,9 @@ LOCATIONS_DATA = {
         "room": 0x0010,
         "collect": COLLECT_TOUCH,
         "symbolic_name": "tarmRuinsSeedTree",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Tarm Ruins"
     },
 
     "Gnarled Root Dungeon: Essence": {
@@ -1927,6 +2548,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Fertile Soil",
         "essence": True,
         "symbolic_name": "essenceD1",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gnarled Root Dungeon"
     },
     "Snake's Remains: Essence": {
         "region_id": "d2 boss",
@@ -1936,6 +2560,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Gift of Time",
         "essence": True,
         "symbolic_name": "essenceD2",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Snake's Remains"
     },
     "Poison Moth's Lair: Essence": {
         "region_id": "d3 boss",
@@ -1945,6 +2572,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Bright Sun",
         "essence": True,
         "symbolic_name": "essenceD3",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Poison Moth's Lair"
     },
     "Dancing Dragon Dungeon: Essence": {
         "region_id": "d4 boss",
@@ -1954,6 +2584,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Soothing Rain",
         "essence": True,
         "symbolic_name": "essenceD4",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Dancing Dragon Dungeon"
     },
     "Unicorn's Cave: Essence": {
         "region_id": "d5 boss",
@@ -1963,6 +2596,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Nurturing Warmth",
         "essence": True,
         "symbolic_name": "essenceD5",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Unicorn's Cave"
     },
     "Ancient Ruins: Essence": {
         "region_id": "d6 boss",
@@ -1972,6 +2608,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Blowing Wind",
         "essence": True,
         "symbolic_name": "essenceD6",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Ancient Ruins"
     },
     "Explorer's Crypt: Essence": {
         "region_id": "d7 boss",
@@ -1981,6 +2620,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Seed of Life",
         "essence": True,
         "symbolic_name": "essenceD7",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Explorer's Crypt"
     },
     "Sword & Shield Dungeon: Essence": {
         "region_id": "d8 boss",
@@ -1990,6 +2632,9 @@ LOCATIONS_DATA = {
         "vanilla_item": "Changing Seasons",
         "essence": True,
         "symbolic_name": "essenceD8",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sword & Shield Dungeon"
     },
     "Horon Village: Item Inside Maku Tree (3+ Essences)": {
         "region_id": "maku tree, 3 essences",
@@ -2000,6 +2645,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc9,
         "symbolic_name": "makuTree3Essences",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Horon Village: Item Inside Maku Tree (5+ Essences)": {
         "region_id": "maku tree, 5 essences",
@@ -2010,6 +2658,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc9,
         "symbolic_name": "makuTree5Essences",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Horon Village: Item Inside Maku Tree (7+ Essences)": {
         "region_id": "maku tree, 7 essences",
@@ -2020,6 +2671,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc9,
         "symbolic_name": "makuTree7Essences",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
 
     "Subrosia: Strange Brothers' Backyard Treasure": {
@@ -2030,6 +2684,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaHideAndSeek",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Village"
     },
     "Subrosia: Hot Bath Digging Spot": {
         "region_id": "subrosia bath digging spot",
@@ -2040,6 +2697,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaBathOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Market Portal Digging Spot": {
         "region_id": "subrosia market digging spot",
@@ -2050,6 +2710,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0xb0,
         "symbolic_name": "subrosiaMarketPortalOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Market"
     },
     "Subrosia: Hard-Working Subrosian Digging Spot": {
         "region_id": "subrosia market digging spot",
@@ -2060,6 +2723,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0xb0,
         "symbolic_name": "subrosiaWorkerOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Temple of Seasons Digging Spot": {
         "region_id": "subrosia temple digging spot",
@@ -2070,6 +2736,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaTempleOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Temple of Seasons"
     },
     "Subrosia: Northern Volcanoes Digging Spot": {
         "region_id": "subrosia temple digging spot",
@@ -2080,6 +2749,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaNorthernVolcanoesOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: D8 Portal Digging Spot": {
         "region_id": "subrosia bridge digging spot",
@@ -2090,6 +2762,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaD8PortalOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Western Volcanoes Digging Spot": {
         "region_id": "subrosia bridge digging spot",
@@ -2100,6 +2775,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_DIG,
         "map_tile": 0x1e,
         "symbolic_name": "subrosiaWesternVolcanoesOreDiggingSpot",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Gasha Nut #1": {
         "region_id": "gasha tree 1",
@@ -2107,6 +2785,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64900,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #2": {
         "region_id": "gasha tree 2",
@@ -2114,6 +2795,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64901,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #3": {
         "region_id": "gasha tree 3",
@@ -2121,6 +2805,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64902,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #4": {
         "region_id": "gasha tree 4",
@@ -2128,6 +2815,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64903,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #5": {
         "region_id": "gasha tree 5",
@@ -2135,6 +2825,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64904,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #6": {
         "region_id": "gasha tree 6",
@@ -2142,6 +2835,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64905,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #7": {
         "region_id": "gasha tree 7",
@@ -2149,6 +2845,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64906,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #8": {
         "region_id": "gasha tree 8",
@@ -2156,6 +2855,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64907,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #9": {
         "region_id": "gasha tree 9",
@@ -2163,6 +2865,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64908,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #10": {
         "region_id": "gasha tree 10",
@@ -2170,6 +2875,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC64909,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #11": {
         "region_id": "gasha tree 11",
@@ -2177,6 +2885,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490A,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #12": {
         "region_id": "gasha tree 12",
@@ -2184,6 +2895,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490B,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #13": {
         "region_id": "gasha tree 13",
@@ -2191,6 +2905,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490C,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #14": {
         "region_id": "gasha tree 14",
@@ -2198,6 +2915,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490D,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #15": {
         "region_id": "gasha tree 15",
@@ -2205,6 +2925,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490E,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Gasha Nut #16": {
         "region_id": "gasha tree 16",
@@ -2212,6 +2935,9 @@ LOCATIONS_DATA = {
         "conditional": True,
         "id": 0xC6490F,
         "room": [],
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Gasha Trees"
     },
     "Spool Swamp: Business Scrub": {
         "region_id": "spool swamp scrub",
@@ -2224,6 +2950,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x80,
         "symbolic_name": "spoolSwampScrub",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Spool Swamp"
     },
     "Samasa Desert: Business Scrub": {
         "region_id": "samasa desert scrub",
@@ -2236,6 +2965,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xbf,
         "symbolic_name": "samasaCaveScrub",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Samasa Desert"
     },
     "Snake's Remains: Business Scrub": {
         "region_id": "d2 scrub",
@@ -2249,6 +2981,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x8d,
         "symbolic_name": "d2Scrub",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Snake's Remains"
     },
     "Dancing Dragon Dungeon (1F): Business Scrub": {
         "region_id": "d4 scrub",
@@ -2262,6 +2997,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_D4_SCRUB_ROOM,
         "map_tile": 0x1d,
         "symbolic_name": "d4Scrub",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Dancing Dragon Dungeon"
     },
 
     # Linked locations
@@ -2275,6 +3013,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xd7,
         "symbolic_name": "clockSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     },
     "Western Coast: Graveyard Secret": {
         "region_id": "graveyard secret",
@@ -2286,6 +3027,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xe0,
         "symbolic_name": "graveyardSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Western Coast"
     },
     "Subrosia: Subrosian Secret": {
         "region_id": "subrosian secret",
@@ -2297,6 +3041,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x9a,
         "symbolic_name": "subrosianSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Sunken City: Diver Secret": {
         "region_id": "diver secret",
@@ -2308,6 +3055,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x5d,
         "symbolic_name": "diverSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Sunken City"
     },
     "Subrosia: Smith Secret": {
         "region_id": "smith secret",
@@ -2319,6 +3069,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x1e,
         "symbolic_name": "smithSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Mountain"
     },
     "Subrosia: Piratian Secret": {
         "region_id": "pirates after bell",
@@ -2330,6 +3083,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xf7,
         "symbolic_name": "pirateSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Subrosia Village"
     },
     "Subrosia: Temple Secret": {
         "region_id": "temple of seasons",
@@ -2341,6 +3097,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xb0,
         "symbolic_name": "templeSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Temple of Seasons"
     },
     "Natzu Region: Deku Secret": {
         "region_id": "deku secret",
@@ -2352,6 +3111,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         # "map_tile": ???,
         "symbolic_name": "dekuSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Natzu"
     },
     "Goron Mountain: Biggoron Secret": {
         "region_id": "biggoron trade",
@@ -2363,6 +3125,9 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0x08,
         "symbolic_name": "biggoronSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Goron Mountain"
     },
     "Horon Village: Mayor Secret": {
         "region_id": "mayor's gift",
@@ -2374,5 +3139,10 @@ LOCATIONS_DATA = {
         "collect": COLLECT_TOUCH,
         "map_tile": 0xc8,
         "symbolic_name": "mayorSecret",
+        "foggy_hints": [],
+        "clear_hint": "",
+        "region": "Horon Village"
     }
 }
+
+HINT_REGIONS = {data.get('region') for _, data in LOCATIONS_DATA.items()}

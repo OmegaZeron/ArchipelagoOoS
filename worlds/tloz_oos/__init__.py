@@ -1,5 +1,6 @@
 import os
 import logging
+import threading
 from typing import List, Union, ClassVar, Any, Optional, Tuple
 import settings
 from BaseClasses import Tutorial, Region, Location, LocationProgressType, Item, ItemClassification, MultiWorld, CollectionState
@@ -10,13 +11,16 @@ from worlds.AutoWorld import WebWorld, World
 from .Util import *
 from .Options import *
 from .Logic import create_connections, apply_self_locking_rules
+from .Hints import generate_hints
 from .PatchWriter import oos_create_ap_procedure_patch
-from .data import LOCATIONS_DATA
+from .data import LOCATIONS_DATA, HINT_REGIONS
 from .data.Constants import *
 from .data.Items import ITEMS_DATA
 from .data.Regions import REGIONS, NATZU_REGIONS, GASHA_REGIONS
 
 from .Client import OracleOfSeasonsClient  # Unused, but required to register with BizHawkClient
+
+io_limiter = threading.Semaphore(2)
 
 
 class OracleOfSeasonsSettings(settings.Group):
@@ -140,6 +144,15 @@ class OracleOfSeasonsWorld(World):
         conflicting_rings = self.options.required_rings.value & self.options.excluded_rings.value
         if len(conflicting_rings) > 0:
             raise OptionError("Required Rings and Excluded Rings contain the same element(s)", conflicting_rings)
+        
+        if (self.options.enable_hints):
+            try:
+                int(self.options.hint_weight_item.value)
+                int(self.options.hint_weight_woth.value)
+                int(self.options.hint_weight_barren.value)
+            except:
+                raise OptionError("Hint weights are not integers")
+
 
         self.remaining_progressive_gasha_seeds = self.options.deterministic_gasha_locations.value
 
@@ -184,6 +197,15 @@ class OracleOfSeasonsWorld(World):
         self.compute_rupee_requirements()
 
         self.create_random_rings_pool()
+        
+        # Hint setup for later
+        self.major_item_locs = []
+        self.regions = HINT_REGIONS
+        self.required_locs = []
+        self.woth_regions = []
+        self.barren_regions = {}
+        self.hint_data = threading.Event()
+
 
     def pick_essences_in_game(self):
         # If the value for "Placed Essences" is lower than "Required Essences" (which can happen when using random
@@ -439,9 +461,15 @@ class OracleOfSeasonsWorld(World):
         for region_name in REGIONS:
             region = Region(region_name, self.player, self.multiworld)
             self.multiworld.regions.append(region)
+            # self.regions.append(region)
 
         for region_name in NATZU_REGIONS[self.options.animal_companion.current_key]:
             region = Region(region_name, self.player, self.multiworld)
+            self.multiworld.regions.append(region)
+            # self.regions.append(region)
+
+        if self.options.logic_difficulty == OracleOfSeasonsLogicDifficulty.option_hell:
+            region = Region("rooster adventure", self.player, self.multiworld)
             self.multiworld.regions.append(region)
 
         if self.options.logic_difficulty == OracleOfSeasonsLogicDifficulty.option_hell:
@@ -452,6 +480,7 @@ class OracleOfSeasonsWorld(World):
             for i in range(self.options.deterministic_gasha_locations):
                 region = Region(GASHA_REGIONS[i], self.player, self.multiworld)
                 self.multiworld.regions.append(region)
+                # self.regions.append(region)
 
         # Create locations
         for location_name, location_data in LOCATIONS_DATA.items():
@@ -905,6 +934,43 @@ class OracleOfSeasonsWorld(World):
         if len(self.random_rings_pool) > 0:
             return self.random_rings_pool.pop()
         return self.get_filler_item_name()  # It might loop but not enough to really matter
+    
+    def is_major_item(self, item: Item):
+        if "Small Key" in item.name or "Master Key" in item.name:
+            return self.options.keysanity_small_keys
+        if "Boss Key" in item.name:
+            return self.options.keysanity_boss_keys
+        if item.name in ESSENCES:
+            return self.options.shuffle_essences
+        # Don't do this?
+        if item.name in SEED_ITEMS:
+            return False
+        
+        return item.advancement
+
+    def skip_region(self, region):
+        if region == "Gasha Trees" and self.options.deterministic_gasha_locations.value == 0:
+            return True
+        
+        return False
+    
+    def excluded_hint_locs(self):
+        locs = []
+        if not self.options.shuffle_essences:
+            locs.extend(LOCATION_GROUPS['Essences'])
+        
+        for i in range(16, self.options.deterministic_gasha_locations.value, -1):
+            locs.append(f"Gasha Nut #{i}")
+        
+        locs.extend(location.name for location in self.multiworld.get_locations(self.player)
+                    if (not self.options.keysanity_small_keys
+                    and ("Small Key" in location.item.name
+                    or "Master Key" in location.item.name)
+                    or (not self.options.keysanity_boss_keys
+                    and "Boss Key" in location.item.name))
+        )
+
+        return locs
 
     @classmethod
     def stage_fill_hook(cls, multiworld: MultiWorld, progitempool, usefulitempool, filleritempool, fill_locations):
@@ -985,10 +1051,63 @@ class OracleOfSeasonsWorld(World):
                 break
 
     def generate_output(self, output_directory: str):
+        if (self.options.enable_hints):
+            self.hint_data.wait()
+
+        with io_limiter:
+            if (self.options.enable_hints):
+                self.hint_rng = self.random
+                generate_hints(self)
+        
         patch = oos_create_ap_procedure_patch(self)
         rom_path = os.path.join(output_directory, f"{self.multiworld.get_out_file_name_base(self.player)}"
                                                   f"{patch.patch_file_ending}")
         patch.write(rom_path)
+
+    @classmethod
+    def stage_generate_output(cls, multiworld: MultiWorld, output_directory: str):
+        players = {world.player for world in multiworld.get_game_worlds("The Legend of Zelda - Oracle of Seasons")
+            if world.options.enable_hints
+            and (int(world.options.hint_weight_barren.value) > 0
+            or int(world.options.hint_weight_woth.value) > 0
+            or int(world.options.hint_weight_item.value) > 0)}
+        region_data = {}
+        for player in players:
+            region_data[player] = {}
+            for region in multiworld.worlds[player].regions:
+                if not multiworld.worlds[player].skip_region(region):
+                    # print(region)
+                    # TODO exclude settings-set barren dungeons?
+                    region_data[player][region] = {"weight": 0, "is_barren": True}
+
+        for loc in multiworld.get_locations():
+            player = loc.player
+            if player in players and loc.name in LOCATIONS_DATA:
+                world: OracleOfSeasonsWorld = multiworld.worlds[player]
+                region = LOCATIONS_DATA[loc.name].get('region')
+                if (region):
+                    region_data[player][region]['weight'] += 1
+                    # Item check
+                    if (world.is_major_item(loc.item)):
+                        world.major_item_locs.append(loc)
+                    # Barren check
+                    if (loc.item.advancement or loc.item.useful):
+                        region_data[player][region]['is_barren'] = False
+                        # world.barren_regions.add(region)
+                    # WotH check
+                    if world.is_major_item(loc.item):
+                        state = CollectionState(multiworld)
+                        state.locations_checked.add(loc)
+                        if not multiworld.can_beat_game(state):
+                            world.required_locs.append(loc)
+                            world.woth_regions.append({'name': region, 'player': player})
+                            # print(loc.item)
+        # print("SET BARREN REGIONS")
+        multiworld.worlds[player].barren_regions = {region: info for (region, info) in region_data[player].items() if info['is_barren']}
+        # print(multiworld.worlds[players.pop()].required_locs)
+        # print(region_data)
+        for world in multiworld.get_game_worlds("The Legend of Zelda - Oracle of Seasons"):
+            world.hint_data.set()
 
     def fill_slot_data(self) -> dict:
         # Put options that are useful to the tracker inside slot data

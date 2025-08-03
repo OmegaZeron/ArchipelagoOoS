@@ -418,6 +418,16 @@ LOCATION_GROUPS = {
         'Sunken City: Syrup Shop #1',
         'Sunken City: Syrup Shop #2',
         'Sunken City: Syrup Shop #3'
+    ],
+    "Essences": [
+        "Gnarled Root Dungeon: Essence",
+        "Snake's Remains: Essence",
+        "Poison Moth's Lair: Essence",
+        "Dancing Dragon Dungeon: Essence",
+        "Unicorn's Cave: Essence",
+        "Ancient Ruins: Essence",
+        "Explorer's Crypt: Essence",
+        "Sword & Shield Dungeon: Essence"
     ]
 }
 
